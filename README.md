@@ -6,7 +6,7 @@ Currently, [Travis CI](https://travis-ci.org/) does not provide a way to [trigge
 This is an unofficial tool, but has been successfully used in [nat](https://github.com/jefferis/nat) to trigger rebuilds of [flycircuit](https://github.com/jefferis/flycircuit), [nat.templatebrains](https://github.com/jefferislab/nat.templatebrains), and [nat.nblast](https://github.com/jefferislab/nat.nblast), and further in [nat.templatebrains](https://github.com/jefferislab/nat.templatebrains) to trigger a rebuild of [nat.flybrains](https://github.com/jefferislab/nat.flybrains).
 
 ## Usage
-In order for builds to be triggered, it is necessary for the script to know your Travis token so that it can authenticate successfully. The easiest way to obtain this is to [use the Travis CI command-line tool](https://github.com/travis-ci/travis.rb#token):
+In order for builds to be triggered, it is necessary for the script to know your Travis access token so that it can authenticate successfully. The easiest way to obtain this is to [use the Travis CI command-line tool](https://github.com/travis-ci/travis.rb#token):
 ```
 travis login
 travis token
