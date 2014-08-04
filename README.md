@@ -1,7 +1,7 @@
 # travis-build-children
 **Executive summary:** After a successful Travis build of a project, trigger a rebuild of a further project that depends on the first.
 
-Currently, [Travis CI](https://travis-ci.org/) does not provide a way to trigger rebuilds when dependencies are updated. This script does not solve this issue, but provides a work-around for some cases by solving the inverse problem, namely rebuilding projects that depend on a parent project after a successful build of the parent. This requires that both the parent and child projects are owned by the same user/organisation, and so some forking of parent repositories may be required depending on your particular use case.
+Currently, [Travis CI](https://travis-ci.org/) does not provide a way to [trigger rebuilds when dependencies are updated](https://github.com/travis-ci/travis-ci/issues/249). This script does not solve this issue, but provides a work-around for some cases by solving the inverse problem, namely rebuilding projects that depend on a parent project after a successful build of the parent. This requires that both the parent and child projects are owned by the same user/organisation, and so some forking of parent repositories may be required depending on your particular use case.
 
 This is an unofficial tool, but has been successfully used in [nat](https://github.com/jefferis/nat) to trigger rebuilds of [flycircuit](https://github.com/jefferis/flycircuit), [nat.templatebrains](https://github.com/jefferislab/nat.templatebrains), and [nat.nblast](https://github.com/jefferislab/nat.nblast), and further in [nat.templatebrains](https://github.com/jefferislab/nat.templatebrains) to trigger a rebuild of [nat.flybrains](https://github.com/jefferislab/nat.flybrains).
 
